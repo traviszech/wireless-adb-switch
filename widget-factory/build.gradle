@@ -6,11 +6,6 @@ android {
     namespace = 'com.smoothie.widgetFactory'
     compileSdk = 37
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-
     defaultConfig {
         minSdk = 30
     }
