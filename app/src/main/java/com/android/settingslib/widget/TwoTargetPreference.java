@@ -27,7 +27,7 @@ import androidx.annotation.NonNull;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import com.smoothie.wirelessDebuggingSwitch.R;
+import moe.smoothie.wadbs.R;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

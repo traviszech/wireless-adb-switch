@@ -60,7 +60,7 @@
 
         <receiver android:name=".KillAppBroadcastReceiver" android:exported="false">
             <intent-filter>
-                <action android:name="com.smoothie.wadbs.KILL_APP"/>
+                <action android:name="moe.smoothie.wadbs.KILL_APP"/>
             </intent-filter>
         </receiver>
 
@@ -87,14 +87,14 @@
         <!-- Information Widget Components -->
 
         <activity
-            android:name="com.smoothie.wirelessDebuggingSwitch.widget.InformationWidgetActivity"
+            android:name=".widget.InformationWidgetActivity"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
             </intent-filter>
         </activity>
 
-        <receiver android:name="com.smoothie.wirelessDebuggingSwitch.widget.InformationWidget"
+        <receiver android:name=".widget.InformationWidget"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -126,8 +126,8 @@
         <receiver android:name=".ExtendedViewBroadcastReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.smoothie.wadbs.oneui_qs_action.COPY_DATA"/>
-                <action android:name="com.smoothie.wadbs.oneui_qs_action.INSTANT_CONNECTION"/>
+                <action android:name="moe.smoothie.wadbs.oneui_qs_action.COPY_DATA"/>
+                <action android:name="moe.smoothie.wadbs.oneui_qs_action.INSTANT_CONNECTION"/>
             </intent-filter>
         </receiver>
 

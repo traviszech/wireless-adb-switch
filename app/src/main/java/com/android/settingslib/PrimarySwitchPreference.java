@@ -27,7 +27,7 @@ import androidx.preference.PreferenceViewHolder;
 
 import com.android.settingslib.widget.TwoTargetPreference;
 import com.google.android.material.materialswitch.MaterialSwitch;
-import com.smoothie.wirelessDebuggingSwitch.R;
+import moe.smoothie.wadbs.R;
 
 /**
  * A custom preference that provides inline switch toggle. It has a mandatory field for title, and

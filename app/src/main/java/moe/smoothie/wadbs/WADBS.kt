@@ -1,0 +1,58 @@
+package moe.smoothie.wadbs
+
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import androidx.core.app.NotificationManagerCompat
+import moe.smoothie.wadbs.BuildConfig
+import com.smoothie.widgetFactory.ConfigurableWidget
+import com.smoothie.widgetFactory.WidgetFactoryApplication
+import moe.smoothie.wadbs.widget.BasicWidget
+import moe.smoothie.wadbs.widget.InformationWidget
+import com.topjohnwu.superuser.Shell
+
+class WADBS : WidgetFactoryApplication() {
+
+    companion object {
+
+        const val PRIVILEGE_NOTIFICATION_CHANNEL_ID =
+            "moe.smoothie.wadbs.missing_privileges_channel"
+        const val PRIVILEGE_NOTIFICATION_ID = 0
+
+        init {
+            Shell.enableVerboseLogging = BuildConfig.DEBUG
+
+            val builder = Shell.Builder.create()
+                .setFlags(Shell.FLAG_REDIRECT_STDERR)
+                .setTimeout(10)
+            Shell.setDefaultBuilder(builder)
+        }
+
+    }
+
+    private lateinit var notificationManager: NotificationManagerCompat
+
+    override fun onCreate() {
+        super.onCreate()
+
+        ConfigurableWidget.addWidget(BasicWidget::class.java.name)
+        ConfigurableWidget.addWidget(InformationWidget::class.java.name)
+
+        Shell.getShell()
+
+        notificationManager =  NotificationManagerCompat.from(this)
+        createMissingPrivilegeNotificationsChannel()
+        if (hasSufficientPrivileges())
+            notificationManager.cancel(PRIVILEGE_NOTIFICATION_ID)
+    }
+
+    private fun createMissingPrivilegeNotificationsChannel() {
+        val channel = NotificationChannel(
+            PRIVILEGE_NOTIFICATION_CHANNEL_ID,
+            getString(R.string.notification_title),
+            NotificationManager.IMPORTANCE_LOW
+        )
+        channel.description = getString(R.string.notification_channel_description)
+        notificationManager.createNotificationChannel(channel)
+    }
+
+}

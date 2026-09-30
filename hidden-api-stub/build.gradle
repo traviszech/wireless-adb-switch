@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace "android"
+    namespace = "android"
     compileSdk = 37
 
     compileOptions {
@@ -12,6 +12,6 @@ android {
     }
 
     defaultConfig {
-        minSdk 30
+        minSdk = 30
     }
 }
