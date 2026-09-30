@@ -21,7 +21,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
-import com.smoothie.widgetFactory.CollapsingToolbarActivity
+import moe.smoothie.widtgetfactory.CollapsingToolbarActivity
 import com.topjohnwu.superuser.Shell
 
 class GrantPermissionsActivity : CollapsingToolbarActivity(

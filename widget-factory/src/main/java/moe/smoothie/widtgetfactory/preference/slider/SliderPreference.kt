@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory.preference.slider
+package moe.smoothie.widtgetfactory.preference.slider
 
 import android.content.Context
 import android.content.res.TypedArray
@@ -13,7 +13,7 @@ import androidx.preference.PreferenceViewHolder
 import com.google.android.material.slider.BasicLabelFormatter
 import com.google.android.material.slider.LabelFormatter
 import com.google.android.material.slider.Slider
-import com.smoothie.widgetFactory.R
+import moe.smoothie.widgetfactory.R
 import kotlin.math.abs
 
 open class SliderPreference : Preference {

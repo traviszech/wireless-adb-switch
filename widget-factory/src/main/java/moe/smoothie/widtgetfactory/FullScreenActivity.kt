@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory
+package moe.smoothie.widtgetfactory
 
 import android.content.res.Configuration.ORIENTATION_LANDSCAPE
 import android.graphics.Color
@@ -7,6 +7,7 @@ import android.util.TypedValue
 import android.view.WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
+import com.google.android.material.R
 
 open class FullScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,12 +28,12 @@ open class FullScreenActivity : AppCompatActivity() {
             return
         }
 
-        val id = com.google.android.material.R.attr.colorSurfaceInverse
+        val id = R.attr.colorSurfaceInverse
         val typedValue = TypedValue()
         theme.resolveAttribute(id, typedValue, true)
         val outlineColor = typedValue.data
 
         window.navigationBarDividerColor = outlineColor
-        window.navigationBarColor = getColor(R.color.colorSurface)
+        window.navigationBarColor = getColor(moe.smoothie.widgetfactory.R.color.colorSurface)
     }
 }

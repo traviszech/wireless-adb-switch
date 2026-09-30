@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory.configuration
+package moe.smoothie.widtgetfactory.configuration
 
 object WidgetPreferences {
 

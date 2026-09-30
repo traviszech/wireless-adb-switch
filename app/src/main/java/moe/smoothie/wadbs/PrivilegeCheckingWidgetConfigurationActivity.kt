@@ -4,7 +4,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.smoothie.widgetFactory.configuration.WidgetConfigurationActivity
+import moe.smoothie.widtgetfactory.configuration.WidgetConfigurationActivity
 
 abstract class PrivilegeCheckingWidgetConfigurationActivity(
     preferenceResourceId: Int,

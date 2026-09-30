@@ -1,6 +1,6 @@
 package moe.smoothie.wadbs.preference
 
-import com.smoothie.widgetFactory.preference.PreferenceActivity
+import moe.smoothie.widtgetfactory.preference.PreferenceActivity
 import moe.smoothie.wadbs.R
 
 class ActivityPreferenceKdeConnect : PreferenceActivity(

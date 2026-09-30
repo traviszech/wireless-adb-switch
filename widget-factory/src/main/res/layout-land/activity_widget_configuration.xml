@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.smoothie.widgetFactory.view.LeftInsetWidthDistributor
+    <moe.smoothie.widtgetfactory.view.LeftInsetWidthDistributor
         android:id="@+id/left_inset"
         android:layout_width="0dp"
         android:layout_height="match_parent"
@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <com.smoothie.widgetFactory.view.TopInsetHeightDistributor
+    <moe.smoothie.widtgetfactory.view.TopInsetHeightDistributor
         android:id="@+id/top_inset"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -70,7 +70,7 @@
 
         </FrameLayout>
 
-        <com.smoothie.widgetFactory.view.BottomInsetHeightDistributor
+        <moe.smoothie.widtgetfactory.view.BottomInsetHeightDistributor
             android:id="@+id/bottom_inset"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -102,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <com.smoothie.widgetFactory.view.BottomInsetHeightDistributor
+            <moe.smoothie.widtgetfactory.view.BottomInsetHeightDistributor
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 tools:paddingBottom="16dp" />
@@ -111,7 +111,7 @@
 
     </androidx.core.widget.NestedScrollView>
 
-    <com.smoothie.widgetFactory.view.RightInsetWidthDistributor
+    <moe.smoothie.widtgetfactory.view.RightInsetWidthDistributor
         android:id="@+id/right_inset"
         android:layout_width="0dp"
         android:layout_height="match_parent"

@@ -92,7 +92,7 @@ private fun getWidgetCornerRadius(
 ): Int {
     val key = context.getString(R.string.key_corner_roundness)
     val roundnessModifier = preferences.getFloat(key, 100f) / 100f
-    val dimensionId = com.smoothie.widgetFactory.R.dimen.system_appwidget_background_radius
+    val dimensionId = moe.smoothie.widgetfactory.R.dimen.system_appwidget_background_radius
     val systemRoundness = context.resources.getDimensionPixelSize(dimensionId)
     val radius = (systemRoundness * roundnessModifier).toInt()
     return if (radius == 0) 1 else radius

@@ -3,7 +3,7 @@ package moe.smoothie.wadbs.widget
 import android.appwidget.AppWidgetManager
 import android.content.*
 import android.util.Log
-import com.smoothie.widgetFactory.ConfigurableWidget
+import moe.smoothie.widtgetfactory.ConfigurableWidget
 import moe.smoothie.wadbs.WirelessDebugging
 
 abstract class SwitchWidget(private val className: String) : ConfigurableWidget() {

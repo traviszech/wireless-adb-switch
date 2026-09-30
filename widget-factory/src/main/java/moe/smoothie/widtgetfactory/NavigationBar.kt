@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory
+package moe.smoothie.widtgetfactory
 
 import android.content.Context
 import androidx.annotation.IntDef

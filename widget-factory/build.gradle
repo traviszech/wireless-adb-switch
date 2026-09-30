@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = 'com.smoothie.widgetFactory'
+    namespace = 'moe.smoothie.widgetfactory'
     compileSdk = 37
 
     defaultConfig {

@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <com.smoothie.widgetFactory.view.BottomInsetHeightDistributor
+            <moe.smoothie.widtgetfactory.view.BottomInsetHeightDistributor
                 android:layout_width="match_parent"
                 android:layout_height="0dp" />
 

@@ -1,10 +1,10 @@
-package com.smoothie.widgetFactory.preference
+package moe.smoothie.widtgetfactory.preference
 
 import android.os.Bundle
 import android.view.View
 import androidx.annotation.CallSuper
-import com.smoothie.widgetFactory.CollapsingToolbarActivity
-import com.smoothie.widgetFactory.R
+import moe.smoothie.widtgetfactory.CollapsingToolbarActivity
+import moe.smoothie.widgetfactory.R
 
 open class PreferenceActivity(
     val preferencesResourceId: Int,

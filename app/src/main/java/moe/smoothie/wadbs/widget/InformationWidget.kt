@@ -10,8 +10,8 @@ import android.view.View.INVISIBLE
 import android.view.View.VISIBLE
 import android.widget.RemoteViews
 import android.widget.Toast
-import com.smoothie.widgetFactory.ConfigurableWidget
-import com.smoothie.widgetFactory.WidgetUpdater
+import moe.smoothie.widtgetfactory.ConfigurableWidget
+import moe.smoothie.widtgetfactory.WidgetUpdater
 import moe.smoothie.wadbs.R
 import moe.smoothie.wadbs.WirelessDebugging
 import moe.smoothie.wadbs.getLightOrDarkTextColor

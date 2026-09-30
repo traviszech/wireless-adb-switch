@@ -8,12 +8,12 @@
     <application>
 
         <receiver
-            android:name="com.smoothie.widgetFactory.WidgetUpdater"
+            android:name="moe.smoothie.widgetfactory.moe.smoothie.widtgetfactory.WidgetUpdater"
             android:exported="false"
             tools:node="merge">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="com.smoothie.widgetFactory.WIDGET_UPDATE_TICK_ACTION" />
+                <action android:name="moe.smoothie.widgetfactory.WIDGET_UPDATE_TICK_ACTION" />
             </intent-filter>
         </receiver>
 

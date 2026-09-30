@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory.preference.slider
+package moe.smoothie.widtgetfactory.preference.slider
 
 import com.google.android.material.slider.LabelFormatter
 

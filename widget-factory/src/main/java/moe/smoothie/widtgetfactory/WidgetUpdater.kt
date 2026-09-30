@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory
+package moe.smoothie.widtgetfactory
 
 import android.app.AlarmManager
 import android.app.PendingIntent
@@ -8,6 +8,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.util.Log
 import androidx.preference.PreferenceManager
+import moe.smoothie.widgetfactory.R
 
 class WidgetUpdater : BroadcastReceiver() {
 
@@ -39,7 +40,7 @@ class WidgetUpdater : BroadcastReceiver() {
 
     companion object {
 
-        private const val INTENT_ACTION = "com.smoothie.widgetFactory.WIDGET_UPDATE_TICK_ACTION"
+        private const val INTENT_ACTION = "moe.smoothie.widgetfactory.WIDGET_UPDATE_TICK_ACTION"
         private const val BOOT_COMPLETED_ACTION = Intent.ACTION_BOOT_COMPLETED
         private const val TAG = "WidgetUpdater"
 

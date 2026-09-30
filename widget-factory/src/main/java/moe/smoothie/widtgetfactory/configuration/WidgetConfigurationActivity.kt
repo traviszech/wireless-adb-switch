@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory.configuration
+package moe.smoothie.widtgetfactory.configuration
 
 import android.annotation.SuppressLint
 import android.appwidget.AppWidgetManager.*
@@ -10,14 +10,11 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.ImageView
 import androidx.appcompat.widget.Toolbar
-import com.smoothie.widgetFactory.ApplicationPreferenceActivity
-import com.smoothie.widgetFactory.ConfigurableWidget
-import com.smoothie.widgetFactory.configuration.PreferenceFragment.Companion.KEY_PREFERENCES_NAME
-import com.smoothie.widgetFactory.configuration.PreferenceFragment.Companion.KEY_PREFERENCES_RESOURCE
-import com.smoothie.widgetFactory.configuration.PreferenceFragment.Companion.KEY_PREVIEW_ASPECT
-import com.smoothie.widgetFactory.FullScreenActivity
-import com.smoothie.widgetFactory.R
-import com.smoothie.widgetFactory.WidgetCutoutDrawable
+import moe.smoothie.widtgetfactory.ApplicationPreferenceActivity
+import moe.smoothie.widtgetfactory.ConfigurableWidget
+import moe.smoothie.widtgetfactory.FullScreenActivity
+import moe.smoothie.widgetfactory.R
+import moe.smoothie.widtgetfactory.WidgetCutoutDrawable
 
 abstract class WidgetConfigurationActivity(
     private val preferencesResourceId: Int,
@@ -79,9 +76,9 @@ abstract class WidgetConfigurationActivity(
         val preferencesName = WidgetPreferences.getWidgetSharedPreferencesName(widgetId)
 
         val arguments = Bundle()
-        arguments.putString(KEY_PREFERENCES_NAME, preferencesName)
-        arguments.putInt(KEY_PREFERENCES_RESOURCE, preferencesResourceId)
-        arguments.putFloat(KEY_PREVIEW_ASPECT, previewAspectRatio)
+        arguments.putString(PreferenceFragment.KEY_PREFERENCES_NAME, preferencesName)
+        arguments.putInt(PreferenceFragment.KEY_PREFERENCES_RESOURCE, preferencesResourceId)
+        arguments.putFloat(PreferenceFragment.KEY_PREVIEW_ASPECT, previewAspectRatio)
 
         val fragmentClass =  PreferenceFragment::class.java
 

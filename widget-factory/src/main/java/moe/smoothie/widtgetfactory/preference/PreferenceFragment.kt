@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory.preference
+package moe.smoothie.widtgetfactory.preference
 
 import android.os.Bundle
 import android.view.View

@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory
+package moe.smoothie.widtgetfactory
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.core.view.doOnAttach
 import androidx.fragment.app.Fragment
 import com.google.android.material.appbar.MaterialToolbar
+import moe.smoothie.widgetfactory.R
 
 open class CollapsingToolbarActivity(
     private val titleStringResource: Int,

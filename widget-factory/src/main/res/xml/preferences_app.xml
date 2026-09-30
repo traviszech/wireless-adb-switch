@@ -10,7 +10,7 @@
         android:icon="@drawable/round_sync_24"
         android:defaultValue="true"/>
 
-    <com.smoothie.widgetFactory.preference.slider.SliderPreference
+    <moe.smoothie.widtgetfactory.preference.slider.SliderPreference
         app:key="@string/key_update_interval"
         app:title="@string/preference_name_update_interval"
         app:summary="@string/preference_summary_update_interval"

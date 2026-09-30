@@ -12,9 +12,8 @@ import androidx.preference.PreferenceGroup
 import androidx.preference.PreferenceManager
 import androidx.preference.SwitchPreferenceCompat
 import com.android.settingslib.PrimarySwitchPreference
-import moe.smoothie.wadbs.BuildConfig
-import com.smoothie.widgetFactory.ApplicationPreferenceActivity
-import com.smoothie.widgetFactory.preference.PreferenceFragment
+import moe.smoothie.widtgetfactory.ApplicationPreferenceActivity
+import moe.smoothie.widtgetfactory.preference.PreferenceFragment
 
 class SettingsActivity : ApplicationPreferenceActivity(
     R.xml.preferences_app,
@@ -105,7 +104,7 @@ class SettingsActivity : ApplicationPreferenceActivity(
         preferenceConnectionDetails = preferenceFragment.findPreference(preferenceKey)!!
         preferenceConnectionDetails.onPreferenceClickListener = connectionDetailsClickListener
 
-        preferenceKey = getString(com.smoothie.widgetFactory.R.string.key_updates_enabled)
+        preferenceKey = getString(moe.smoothie.widgetfactory.R.string.key_updates_enabled)
         preferenceServiceActive = preferenceFragment.findPreference(preferenceKey)!!
 
         preferenceKey = getString(R.string.key_settings_preference_group)

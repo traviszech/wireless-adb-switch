@@ -3,7 +3,7 @@ package moe.smoothie.wadbs.widget
 import android.content.Context
 import android.content.SharedPreferences
 import android.widget.RemoteViews
-import com.smoothie.widgetFactory.WidgetUpdater
+import moe.smoothie.widtgetfactory.WidgetUpdater
 import moe.smoothie.wadbs.R
 import moe.smoothie.wadbs.getLightOrDarkTextColor
 import moe.smoothie.wadbs.hasSufficientPrivileges

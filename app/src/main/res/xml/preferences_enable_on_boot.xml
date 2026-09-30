@@ -9,7 +9,7 @@
         android:title="@string/preference_switch_name_enable_on_boot"
         app:layout="@layout/preference_big_switch" />
 
-    <com.smoothie.widgetFactory.preference.slider.SliderPreference
+    <moe.smoothie.widtgetfactory.preference.slider.SliderPreference
         android:key="@string/key_after_boot_wait_time"
         android:icon="@drawable/round_av_timer_24"
         android:title="@string/preference_name_after_boot_wait_time"

@@ -1,9 +1,10 @@
-package com.smoothie.widgetFactory
+package moe.smoothie.widtgetfactory
 
 import android.app.Application
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener
 import android.util.Log
 import androidx.preference.PreferenceManager
+import moe.smoothie.widgetfactory.R
 
 open class WidgetFactoryApplication : Application() {
 

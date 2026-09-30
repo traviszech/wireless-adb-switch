@@ -3,8 +3,8 @@ package moe.smoothie.wadbs
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import androidx.core.app.NotificationManagerCompat
-import com.smoothie.widgetFactory.ConfigurableWidget
-import com.smoothie.widgetFactory.WidgetFactoryApplication
+import moe.smoothie.widtgetfactory.ConfigurableWidget
+import moe.smoothie.widtgetfactory.WidgetFactoryApplication
 import moe.smoothie.wadbs.widget.BasicWidget
 import moe.smoothie.wadbs.widget.InformationWidget
 import com.topjohnwu.superuser.Shell

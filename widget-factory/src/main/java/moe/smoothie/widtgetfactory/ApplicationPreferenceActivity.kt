@@ -1,10 +1,11 @@
-package com.smoothie.widgetFactory
+package moe.smoothie.widtgetfactory
 
 import android.os.Bundle
-import com.smoothie.widgetFactory.preference.PreferenceActivity
+import moe.smoothie.widgetfactory.R
+import moe.smoothie.widtgetfactory.preference.PreferenceActivity
 
 /**
- * /this derive]atu=ive of [PreferenceActivity] will hide the navigation up button from the toolbar
+ * /this derivative of [PreferenceActivity] will hide the navigation up button from the toolbar
  * if the [EXTRA_KEEP_NAVIGATION_UP] is not found inside an intent.
  */
 open class ApplicationPreferenceActivity(
@@ -13,7 +14,7 @@ open class ApplicationPreferenceActivity(
 ) : PreferenceActivity(preferenceResourceId, titleStringResource) {
 
     companion object {
-        const val EXTRA_KEEP_NAVIGATION_UP = "com.smoothie.widgetFactory.KEEP_NAVIGATION_UP"
+        const val EXTRA_KEEP_NAVIGATION_UP = "moe.smoothie.widgetfactory.KEEP_NAVIGATION_UP"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

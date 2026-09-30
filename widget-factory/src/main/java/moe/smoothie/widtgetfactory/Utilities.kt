@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory
+package moe.smoothie.widtgetfactory
 
 import android.graphics.Insets
 import android.view.View

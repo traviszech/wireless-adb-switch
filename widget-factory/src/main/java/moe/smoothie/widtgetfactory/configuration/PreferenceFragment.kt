@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory.configuration
+package moe.smoothie.widtgetfactory.configuration
 
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import androidx.preference.PreferenceFragmentCompat
-import com.smoothie.widgetFactory.R
+import moe.smoothie.widgetfactory.R
 
 class PreferenceFragment : PreferenceFragmentCompat() {
 

@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory
+package moe.smoothie.widtgetfactory
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -10,7 +10,7 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
 import android.widget.RemoteViews
-import com.smoothie.widgetFactory.configuration.WidgetPreferences
+import moe.smoothie.widtgetfactory.configuration.WidgetPreferences
 
 abstract class ConfigurableWidget : AppWidgetProvider() {
     companion object {

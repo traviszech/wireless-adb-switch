@@ -1,4 +1,4 @@
-package com.smoothie.widgetFactory.view
+package moe.smoothie.widtgetfactory.view
 
 import android.content.Context
 import android.graphics.Insets
@@ -6,7 +6,7 @@ import android.util.AttributeSet
 import android.view.View
 import androidx.core.view.updateLayoutParams
 
-class TopInsetHeightDistributor : InsetSizeDistributor {
+class LeftInsetWidthDistributor : InsetSizeDistributor {
 
     constructor(context: Context) : super(context)
 
@@ -17,7 +17,7 @@ class TopInsetHeightDistributor : InsetSizeDistributor {
 
     override fun applyInsets(view: View, insets: Insets) {
         view.updateLayoutParams {
-            this.height = insets.top
+            this.width = insets.left
         }
     }
 }
