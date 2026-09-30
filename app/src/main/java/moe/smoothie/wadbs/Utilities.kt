@@ -14,7 +14,6 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import com.google.android.material.button.MaterialButton
 import com.topjohnwu.superuser.Shell
-import kotlin.text.compareTo
 
 val centeredAlertDialogStyle =
     com.google.android.material.R.style.ThemeOverlay_Material3_MaterialAlertDialog_Centered

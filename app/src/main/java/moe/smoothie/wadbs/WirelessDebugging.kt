@@ -7,7 +7,6 @@ import android.util.Log
 import android.widget.Toast
 import androidx.preference.PreferenceManager
 import com.topjohnwu.superuser.Shell
-import kotlin.toString
 
 object WirelessDebugging {
 
