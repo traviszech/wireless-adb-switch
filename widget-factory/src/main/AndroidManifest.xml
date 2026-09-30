@@ -8,7 +8,7 @@
     <application>
 
         <receiver
-            android:name="moe.smoothie.widgetfactory.moe.smoothie.widtgetfactory.WidgetUpdater"
+            android:name="moe.smoothie.widtgetfactory.WidgetUpdater"
             android:exported="false"
             tools:node="merge">
             <intent-filter>
